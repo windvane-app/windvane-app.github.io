@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://windvane-app.github.io/sitemap.xml
