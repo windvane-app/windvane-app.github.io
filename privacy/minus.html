@@ -101,7 +101,7 @@
 <main class="policy">
 <h1>Privacy Policy for MINUS: HabitOff</h1>
 <p class="jump"><a href="#ko">한국어 보기 ↓</a></p>
-<p><strong>Effective Date: October 28, 2026</strong> (previous version: November 29, 2025)</p>
+<p><strong>Effective Date: November 22, 2026</strong> (previous version: October 28, 2026)</p>
 <p>WINDVANE (윈드베인), a sole proprietorship registered in the Republic of Korea (representative: Seonguk Lee), ("we", "us") provides MINUS: HabitOff (the "App"), an app that helps you cut down unwanted habits. This policy explains what information is handled when you use the App.</p>
 <h2>1. Information We Collect</h2>
 <p>The App has no sign-up. We use <strong>anonymous login</strong>, so we do not collect your name, email address, or phone number.</p>
@@ -110,25 +110,27 @@
 <li><strong>Anonymous user ID:</strong> A random identifier created by Firebase Authentication to keep your data separate from other users.</li>
 <li><strong>Habit &amp; log data:</strong> Habits you create, daily success/failure records with their time, failure reasons and any extra details you type, streaks and Shields.</li>
 <li><strong>Settings:</strong> Reminder settings and the latest AI Coach Report you received (kept for the day so it is not generated again).</li>
+<li><strong>Tough Hour settings:</strong> Your Tough Hour (the hour of the day, 0–23, when you usually slip), how it was set (chosen by you, calculated automatically from your records, or changed in Settings), whether the Tough-Hour Alert is on, and when it was last changed. Stored in the same Settings record as above.</li>
 <li><strong>Last activity date:</strong> Used to delete inactive accounts automatically (see Section 4).</li>
 </ul>
 <h3>B. Automatically Collected Information</h3>
 <ul>
-<li><strong>Usage statistics (Firebase Analytics):</strong> App events such as screen views, check-ins and feature use, together with your anonymous user ID, device model, OS version, language and approximate region.</li>
+<li><strong>Usage statistics (Firebase Analytics):</strong> App events such as screen views, check-ins and feature use, together with your anonymous user ID, device model, OS version, language and approximate region. Tough Hour events (setting it, automatic changes, opening the alert, the button you choose on the home card, and your answer to the exact-alarm permission request) include only the hour number (e.g. 23), how it was set, the number of failures and the button type — never habit names or anything you typed.</li>
 <li><strong>Advertising ID and ad interaction data (Google AdMob):</strong> Used to show and measure ads.</li>
 <li><strong>Device information:</strong> Device model, OS version, language settings and time zone.</li>
 </ul>
 <h3>C. Information Sent to AI (AI Coach Report)</h3>
-<p>When you request an <strong>AI Coach Report</strong>, a summary of your records for the selected period is sent to the Google Gemini API through our server to write the feedback: habit names, success/failure counts, streaks, saved time and money, and the date, time and reasons of failures (including any extra details you typed). It is not linked to your name or contact details. <strong>Please do not enter your name, contact details or other personal information in habit names or failure details.</strong></p>
+<p>When you request an <strong>AI Coach Report</strong>, a summary of your records for the selected period is sent to the Google Gemini API through our server to write the feedback: habit names, success/failure counts, streaks, saved time and money, and the date, time and reasons of failures (including any extra details you typed). Your Tough Hour setting is not sent. It is not linked to your name or contact details. <strong>Please do not enter your name, contact details or other personal information in habit names or failure details.</strong></p>
 <h3>D. Information Processed Only on Your Device</h3>
 <ul>
 <li>Dopamine Test answers and results are processed on your device and are not sent to our server.</li>
+<li><strong>Automatic Tough Hour:</strong> If you have 3 or more failure records in the last 30 days, the App sets the most frequent failure hour as your Tough Hour. This is calculated on your device using only the times of failure records you have already saved; nothing extra is sent outside the App (only the resulting setting is saved as described in Section 1-A).</li>
 <li>Share cards are sent only when you choose to share them, to the destination you select.</li>
 </ul>
 <h3>E. Permissions (Android)</h3>
 <ul>
-<li><strong>Notifications (POST_NOTIFICATIONS):</strong> Daily check-in reminders, scheduled on your device (not sent from a server). Only if you allow it.</li>
-<li><strong>Alarms (SCHEDULE_EXACT_ALARM):</strong> To ring reminders at the exact time you set.</li>
+<li><strong>Notifications (POST_NOTIFICATIONS):</strong> Daily check-in reminders and the Tough-Hour Alert (sent 15 minutes before your Tough Hour), both scheduled on your device (not sent from a server). Only if you allow it. You can turn the Tough-Hour Alert off in Settings.</li>
+<li><strong>Alarms (SCHEDULE_EXACT_ALARM):</strong> To ring check-in reminders at the exact time you set, and to ring the Tough-Hour Alert at its scheduled time. The App asks for this once, with an explanation, after you set your Tough Hour. If you do not allow it, alerts still work but may arrive a little late.</li>
 <li><strong>Internet:</strong> To save your data, show ads and generate AI reports.</li>
 </ul>
 <h2>2. How We Use Your Information</h2>
@@ -136,7 +138,7 @@
 <li><strong>Service provision:</strong> Storing habits and records, streaks, Shields and reports.</li>
 <li><strong>AI Coach Report:</strong> Writing personalized feedback when you request it.</li>
 <li><strong>User identification:</strong> Keeping your data under your anonymous ID.</li>
-<li><strong>Reminders:</strong> Sending the check-in reminders you set.</li>
+<li><strong>Reminders:</strong> Sending the check-in reminders you set and the Tough-Hour Alert.</li>
 <li><strong>Advertising:</strong> Showing banner, interstitial and rewarded ads via Google AdMob.</li>
 <li><strong>Service improvement:</strong> Analyzing usage and errors to improve the App.</li>
 </ol>
@@ -186,7 +188,7 @@
 * Google ads: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
 <h2>4. Data Retention and Deletion</h2>
 <h3>A. Retention</h3>
-<p>Your data is kept on Firebase servers while you use the App.</p>
+<p>Your data is kept on Firebase servers while you use the App. Tough Hour settings are kept and deleted in the same way as your other data (Sections 4-B and 4-C).</p>
 <h3>B. Data Deletion (Account Withdrawal)</h3>
 <p>You can delete all your data (habits, records, settings and your anonymous account) immediately by tapping <strong>[Delete All My Data]</strong> in the App settings. Deleted data cannot be recovered.</p>
 <h3>C. Auto-Deletion</h3>
@@ -205,7 +207,7 @@
 <p>We will post any changes on this page. The updated policy applies from the effective date shown at the top.</p>
 <hr />
 <h1 id="ko">MINUS: HabitOff 개인정보처리방침 (Korean)</h1>
-<p><strong>시행일: 2026년 10월 28일</strong> (이전 버전: 2025년 11월 29일)</p>
+<p><strong>시행일: 2026년 11월 22일</strong> (이전 버전: 2026년 10월 28일)</p>
 <p>윈드베인(WINDVANE, 대표 이성욱, 이하 "개발자")은 나쁜 습관을 덜어내도록 돕는 앱 MINUS: HabitOff(이하 "앱")를 제공합니다. 이 방침은 앱을 이용할 때 처리되는 정보를 설명합니다.</p>
 <h2>1. 수집하는 개인정보 항목</h2>
 <p>앱은 회원가입이 없으며 <strong>익명 로그인</strong>을 사용합니다. 이름, 이메일, 전화번호는 수집하지 않습니다.</p>
@@ -214,25 +216,27 @@
 <li><strong>익명 사용자 ID:</strong> 다른 사용자와 데이터를 구분하기 위해 Firebase Authentication이 만드는 임의의 식별값</li>
 <li><strong>습관 및 기록 데이터:</strong> 사용자가 만든 습관, 날짜별 성공·실패 기록과 시간, 실패 사유와 직접 입력한 상세 내용, 연속 기록, 쉴드</li>
 <li><strong>설정:</strong> 알림 설정, 당일 받은 AI 코치 리포트(같은 날 다시 생성하지 않도록 보관)</li>
+<li><strong>고비 시간 설정:</strong> 고비 시간(평소 무너지는 시각, 0~23시), 이 시각을 정한 방식(사용자 선택 / 기록으로 자동 계산 / 설정에서 직접 변경), 고비 시간 알림 사용 여부, 마지막 변경 시각. 위 설정과 같은 문서에 저장됩니다.</li>
 <li><strong>마지막 이용일:</strong> 장기 미사용 계정 자동 삭제에 사용 (4장 참고)</li>
 </ul>
 <h3>B. 자동으로 수집되는 정보</h3>
 <ul>
-<li><strong>이용 통계 (Firebase Analytics):</strong> 화면 조회, 체크인, 기능 사용 같은 앱 이벤트와 익명 사용자 ID, 기기 모델, OS 버전, 언어, 대략적인 지역</li>
+<li><strong>이용 통계 (Firebase Analytics):</strong> 화면 조회, 체크인, 기능 사용 같은 앱 이벤트와 익명 사용자 ID, 기기 모델, OS 버전, 언어, 대략적인 지역. 고비 시간 관련 이벤트(설정, 자동 변경, 알림 열기, 홈 카드 버튼 선택, 정확 알람 권한 요청 응답)에는 시각 숫자(예: 23), 설정 방식, 실패 건수, 버튼 종류만 담기며, 습관 이름이나 직접 입력한 내용은 보내지 않습니다.</li>
 <li><strong>광고 식별자 및 광고 이용 정보 (Google AdMob):</strong> 광고 표시 및 성과 측정</li>
 <li><strong>기기 정보:</strong> 기기 모델명, OS 버전, 언어 설정, 타임존</li>
 </ul>
 <h3>C. AI로 전송되는 정보 (AI 코치 리포트)</h3>
-<p>사용자가 <strong>AI 코치 리포트</strong>를 요청하면, 피드백 작성을 위해 선택한 기간의 기록 요약이 개발자 서버를 거쳐 Google Gemini API로 전송됩니다. 전송되는 내용은 습관 이름, 성공·실패 횟수, 연속 기록, 아낀 시간과 돈, 실패한 날짜·시간·사유(직접 입력한 상세 내용 포함)이며, 이름이나 연락처와는 연결되지 않습니다. <strong>습관 이름이나 실패 상세 내용에 이름, 연락처 등 개인정보를 입력하지 마세요.</strong></p>
+<p>사용자가 <strong>AI 코치 리포트</strong>를 요청하면, 피드백 작성을 위해 선택한 기간의 기록 요약이 개발자 서버를 거쳐 Google Gemini API로 전송됩니다. 전송되는 내용은 습관 이름, 성공·실패 횟수, 연속 기록, 아낀 시간과 돈, 실패한 날짜·시간·사유(직접 입력한 상세 내용 포함)이며, 고비 시간 설정은 보내지 않습니다. 이름이나 연락처와는 연결되지 않습니다. <strong>습관 이름이나 실패 상세 내용에 이름, 연락처 등 개인정보를 입력하지 마세요.</strong></p>
 <h3>D. 기기 안에서만 처리되는 정보</h3>
 <ul>
 <li>도파민 테스트 답변과 결과는 기기 안에서만 처리되며 개발자 서버로 전송되지 않습니다.</li>
+<li><strong>고비 시간 자동 계산:</strong> 최근 30일 동안 실패 기록이 3건 이상이면, 실패 기록 시각 중 가장 많은 시각을 고비 시간으로 자동 설정합니다. 이미 저장된 실패 기록의 시간 정보만 써서 기기 안에서 계산하며, 이를 위해 외부로 따로 보내는 정보는 없습니다(계산 결과인 설정값만 1장 A와 같이 저장됩니다).</li>
 <li>공유 카드는 사용자가 직접 공유를 선택했을 때만 사용자가 고른 곳으로 전달됩니다.</li>
 </ul>
 <h3>E. 사용 권한 (Android)</h3>
 <ul>
-<li><strong>알림 (POST_NOTIFICATIONS):</strong> 일일 체크인 알림. 기기 안에서 예약되며 서버에서 보내지 않습니다. 허용한 경우에만 사용합니다.</li>
-<li><strong>알람 (SCHEDULE_EXACT_ALARM):</strong> 설정한 시간에 정확히 알림을 울리기 위해 사용</li>
+<li><strong>알림 (POST_NOTIFICATIONS):</strong> 일일 체크인 알림과 고비 시간 알림(고비 시간 15분 전). 모두 기기 안에서 예약되며 서버에서 보내지 않습니다. 허용한 경우에만 사용하며, 고비 시간 알림은 설정에서 끌 수 있습니다.</li>
+<li><strong>알람 (SCHEDULE_EXACT_ALARM):</strong> 체크인 알림을 설정한 시간에, 고비 시간 알림을 정해진 시각에 정확히 울리기 위해 사용. 앱은 고비 시간을 정한 뒤 설명과 함께 한 번만 이 권한을 요청하며, 허용하지 않아도 알림은 조금 늦게 올 수 있을 뿐 그대로 동작합니다.</li>
 <li><strong>인터넷:</strong> 데이터 저장, 광고 표시, AI 리포트 생성</li>
 </ul>
 <h2>2. 개인정보의 이용 목적</h2>
@@ -240,7 +244,7 @@
 <li><strong>서비스 제공:</strong> 습관과 기록 저장, 연속 기록·쉴드·리포트 제공</li>
 <li><strong>AI 코치 리포트:</strong> 요청 시 맞춤 피드백 작성</li>
 <li><strong>사용자 식별:</strong> 익명 ID로 데이터 유지</li>
-<li><strong>알림:</strong> 사용자가 설정한 체크인 알림 발송</li>
+<li><strong>알림:</strong> 사용자가 설정한 체크인 알림과 고비 시간 알림 발송</li>
 <li><strong>광고 게재:</strong> Google AdMob을 통한 배너, 전면, 보상형 광고</li>
 <li><strong>서비스 개선:</strong> 이용 통계와 오류 분석을 통한 앱 개선</li>
 </ol>
@@ -290,7 +294,7 @@
 * Google 광고: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
 <h2>4. 데이터의 보유 및 삭제</h2>
 <h3>A. 보유 기간</h3>
-<p>데이터는 앱을 이용하는 동안 Firebase 서버에 보관됩니다.</p>
+<p>데이터는 앱을 이용하는 동안 Firebase 서버에 보관됩니다. 고비 시간 설정도 다른 데이터와 같은 방식으로 보관·삭제됩니다(4장 B·C).</p>
 <h3>B. 데이터 삭제 (회원 탈퇴)</h3>
 <p>앱 설정의 <strong>[내 모든 데이터 삭제]</strong> 버튼으로 습관, 기록, 설정, 익명 계정을 즉시 영구 삭제할 수 있습니다. 삭제된 데이터는 복구할 수 없습니다.</p>
 <h3>C. 자동 파기</h3>
